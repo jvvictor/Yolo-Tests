@@ -53,10 +53,9 @@ def inference(img, model):
 if __name__ == "__main__":
 
     start = time.time()
-    model = torch.hub.load('ultralytics/yolov5', 'custom', path = 'best.pt')
-    #model.classes = [0]
+    model = torch.hub.load('ultralytics/yolov5', 'custom', path = 'best50.pt')
 
-    video = cv2.VideoCapture('yt1s.com - Desfile dia da Infantaria Exército Brasileiro 20 BIB_Trim.mp4')
+    video = cv2.VideoCapture('yt1s.com - North Koreas Slow Motion Military  North Korea parade in Slow Motion_Trim2.mp4')
 
     height = int(video.get(cv2.CAP_PROP_FRAME_HEIGHT))
     width = int(video.get(cv2.CAP_PROP_FRAME_WIDTH))
